@@ -7,8 +7,39 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}" >
     <script src="{% static 'js/bootstrap.min.js' %}" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"/>
 </head>
 <body>
+<!--navbar-->
+<div class="container-fluid">
+    <nav class="navbar navbar-dark bg-dark">
+        <h1 class="navbar-brand"> To Do App</h1>
+    </nav>
+</div>
+<!--navbar-->
+
+<div class="container-fluid" >
+    <div class="row"> <!--row-->
+        <div class="sidebar col-3 mt-2"><!--sidebar-->
+            <ul class="list-group"><!--list items-->
+                <li class="list-group-item">Notes</li>
+                <li class="list-group-item">Archive</li>
+                <li class="list-group-item">Trash</li>
+                <!--TODO for loop for group note-->
+            </ul><!--list items-->
+
+        </div><!--sidebar-->
+        <div class="main-content col-9 "><!--content-->
+            <div id="main-notes"><!--main note body-->
+                <!--TODO for loop for data from DB-->
+                    <div class="note"><!--note body-->
+                        <p></p>
+                     </div><!--note body-->
+
+            </div><!--main note body-->
+        </div><!--content-->
+
+    </div> <!--row-->
 
 </div>
 </body>
