@@ -1,1 +1,66 @@
-.
+body {
+  background-color: grey;
+}
+.sidebar {
+  background-color: grey;
+  max-height:600px;
+  padding:10px
+}
+.list-group-item {
+  background-color:transparent;
+  color:white;
+  border-radius: 30px;
+  border: 2px solid white;
+  margin:5px;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.list-group-item:last-child {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.list-group-item+.list-group-item {
+    border-top-width:2px ;
+}
+.note{
+  border-radius: 30px;
+  border: 2px solid white;
+  background-color:transparent;
+  color:white;
+  width:auto;
+  height:auto;
+  margin:2px;
+  display: inline-block;
+  transition: opacity .4s ease-in-out;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+   column-break-inside: avoid;
+}
+p {
+margin:0;
+padding:20px;
+}
+.navbar-brand{
+margin-left:20px;
+color:grey;
+}
+.main-content{
+margin-top:14px
+}
+#main-notes{
+    column-width: 320px;
+	column-gap: 15px;
+    width: 90%;
+	max-width: 1100px;
+	margin: 20px auto;
+}
+div#main-notes:hover note:not(:hover) {
+	opacity: 0.4;
+}
+.img-round{
+width:150px;
+height:150px;
+border-radius: 30px;
+border: 2px solid white;
+}

@@ -30,9 +30,14 @@
 
         </div><!--sidebar-->
         <div class="main-content col-9 "><!--content-->
+            <h1 class="display-5 text-light">Notes</h1>
+            <!--TODO grid for pinned notes-->
+            <p>
+                <img src="{% static 'plus-icon-.png' %}" class="img-round" data-bs-toggle="modal" data-bs-target="#note-model">
+            </p>
             <div id="main-notes"><!--main note body-->
                 <!--TODO for loop for data from DB-->
-                    <div class="note"><!--note body-->
+                    <div class="note" data-bs-toggle="modal" data-bs-target="#note-model"><!--note body-->
                         <p></p>
                      </div><!--note body-->
 
@@ -40,7 +45,29 @@
         </div><!--content-->
 
     </div> <!--row-->
+    <div class="modal fade" tabindex="-1"  id="note-model">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color:#2B303A;">
+                <div class="modal-header">
+                    <input class="modal-title" style="background-color:#2B303A; color:white; border: 2px solid white;" placeholder="Label">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="height:auto;">
+                   <input type="text" style="width:100%;background-color:#2B303A; color:white; border: 2px solid white;" placeholder="Title">
+                    <textarea class="text-area" style=" background-color:#2B303A; color:white; border: 2px solid white; width:100%; min-height:250px; margin-top:5px" placeholder="Note" >
 
+                    </textarea>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 </body>
+
 </html>

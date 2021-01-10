@@ -46,15 +46,22 @@ margin-left:20px;
 color:grey;
 }
 .main-content{
-margin-top:24px
+margin-top:14px
 }
 #main-notes{
     column-width: 320px;
 	column-gap: 15px;
     width: 90%;
 	max-width: 1100px;
-	margin: 50px auto;
+	margin: 20px auto;
 }
 div#main-notes:hover note:not(:hover) {
 	opacity: 0.4;
+}
+
+.img-round{
+width:150px;
+height:150px;
+border-radius: 30px;
+border: 2px solid white;
 }
