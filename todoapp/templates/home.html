@@ -21,7 +21,7 @@
 <div class="container-fluid" >
     <div class="row"> <!--row-->
         <div class="sidebar col-3 mt-2"><!--sidebar-->
-            <ul class="list-group"><!--list items-->
+            <ul class="list-group list-group-hover"><!--list items-->
                 <li class="list-group-item">Notes</li>
                 <li class="list-group-item">Archive</li>
                 <li class="list-group-item">Trash</li>
@@ -30,7 +30,7 @@
 
         </div><!--sidebar-->
         <div class="main-content col-9 "><!--content-->
-            <h1 class="display-5 text-light">Notes</h1>
+            <!--<h1 class="display-5 text-light">Notes</h1>-->
             <!--TODO grid for pinned notes-->
             <p>
                 <img src="{% static 'plus-icon-.png' %}" class="img-round" data-bs-toggle="modal" data-bs-target="#note-model">
@@ -53,10 +53,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="height:auto;">
-                   <input type="text" style="width:100%;background-color:#2B303A; color:white; border: 2px solid white;" placeholder="Title">
-                    <textarea class="text-area" style=" background-color:#2B303A; color:white; border: 2px solid white; width:100%; min-height:250px; margin-top:5px" placeholder="Note" >
-
-                    </textarea>
+                    <input type="text" style="width:100%;background-color:#2B303A; color:white; border: 2px solid white;" placeholder="Title">
+                    <textarea class="text-area" style=" background-color:#2B303A; color:white; border: 2px solid white; width:100%; min-height:250px; margin-top:5px" placeholder="Note"></textarea>
                 </div>
 
                 <div class="modal-footer">
